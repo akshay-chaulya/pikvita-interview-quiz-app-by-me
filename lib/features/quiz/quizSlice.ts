@@ -47,8 +47,9 @@ const loadState = (): QuizState | undefined => {
       return undefined;
     }
     return JSON.parse(serializedState) as QuizState;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (err) {
-    return undefined;
+    return undefined
   }
 };
 
